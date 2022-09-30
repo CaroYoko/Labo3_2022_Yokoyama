@@ -1,0 +1,78 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#cuerpoPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  height: 100vh;
+  width: 100vw;
+}
+
+#formABM {
+  background: -webkit-linear-gradient(rgb(122, 135, 250), rgb(206, 56, 206));
+  border: 4px solid black;
+  padding: 2vh;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 400px;
+  min-width: 40vh;  
+}
+
+#registros {
+  background: linear-gradient(rgb(81, 196, 14), rgb(122, 135, 250));;
+  padding: 2vh;
+  border: 4px solid black;
+}
+
+td {
+  border: 4px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 1px;
+}
+
+th {
+  border: 4px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.cuerpoTabla {
+  margin-top: 10px;
+}
+
+.cuerpoTabla table {
+  width: 100%;
+  margin: 5px auto 10px;
+  border: 4px solid black;
+  border-collapse: collapse;
+}
+
+.botoneraPie {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.btnColumna {
+  width: 100%;
+}
+
+.labelABM {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

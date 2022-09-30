@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div id="cuerpoPrincipal">
+    <div id="registros">
+      <div class="titulo">
+        <h3>Form Datos</h3>
+      </div>
+      <div class="labelTabla">
+        <label for="filtro">Filtrar Por:</label>
+        <select name="filtro" id="filtro">
+          <option value="Todos">Todos</option>
+          <option value="Heroe">Heroe</option>
+          <option value="Villano">Villano</option>
+        </select>
+      </div>
+      <div class="labelTabla">
+        <label for="id">Calcular Edad Promedio:</label>
+        <input id="idPromedio" type="text">
+        <input class= "boton" id="btnCalcularPromEdad" type="button" value="Calcular">
+      </div>
+      <div class="cuerpoTabla">
+        <div>
+          <input type="checkbox" id="chkID" name="chkID" value="idColum">
+          <label for="chkID">ID</label>          
+          <input type="checkbox" id="chkNombre" name="chkNombre" value="nombreColum">
+          <label for="chkNombre">Nombre</label>
+          <input type="checkbox" id="chkApellido" name="chkApellido" value="apellidoColum">
+          <label for="chkApellido">Apellido</label>
+          <input type="checkbox" id="chkEdad" name="chkEdad" value="edadColum">
+          <label for="chkEdad">Edad</label>
+          <input type="checkbox" id="chkAlterego" name="chkAlterego" value="alteregoColum">
+          <label for="chkAlterego">AlterEgo</label>
+          <input type="checkbox" id="chkCiudad" name="chkCiudad" value="ciudadColum">
+          <label for="chkCiudad">Ciudad</label>
+          <input type="checkbox" id="chkPublicado" name="chkPublicado" value="publicadoColum">
+          <label for="chkPublicado">Publicado</label>
+          <input type="checkbox" id="chkEnemigo" name="chkEnemigo" value="enemigoColum">
+          <label for="chkEnemigo">Enemigo</label>
+          <input type="checkbox" id="chkRobos" name="chkRobos" value="robosColum">
+          <label for="chkRobos">Robos</label>
+          <input type="checkbox" id="chkAsesinatos" name="chkAsesinatos" value="asesinatosColum">
+          <label for="chkAsesinatos">Asesinatos</label>
+        </div>
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th id="idColum"><button class="btnColumna" id="btnId">ID</button></th>
+              <th id="nombreColum"><button class="btnColumna" id="btnNombre">Nombre</button></th>
+              <th id="apellidoColum"><button class="btnColumna" id="btnApellido">Apellido</button></th>
+              <th id="edadColum"><button class="btnColumna" id="btnEdad">Edad</button></th>
+              <th id="alteregoColum"><button class="btnColumna" id="btnAlterego">AlterEgo</button></th>
+              <th id="ciudadColum"><button class="btnColumna" id="btnCiudad">Ciudad</button></th>
+              <th id="publicadoColum"><button class="btnColumna" id="btnPublicado">Publicado</button></th>
+              <th id="enemigoColum"><button class="btnColumna" id="btnEnemigo">Enemigo</button></th>
+              <th id="robosColum"><button class="btnColumna" id="btnRobos">Robos</button></th>
+              <th id="asesinatosColum"><button class="btnColumna" id="btnAsesinatos">Asesinatos</button></th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo">
+          </tbody>
+        </table>
+      </div>
+      <div class="botoneraPie">
+        <input class= "boton" id="btnAgregarTabla" type="button" value="Agregar">
+      </div>
+    </div>
+    <div id="formABM">
+      <div class="titulo">
+        <h3 id = "tituloABM">Form Alta/Modificacion/Eliminacion</h3>
+      </div>
+      <div class="labelABM">
+        <label for="idForm">ID</label>
+        <input name="idForm" id="idForm" type="number">
+      </div>
+      <div class="labelABM">
+        <label for="nombreForm">Nombre</label>
+        <input name="" id="nombreForm" type="text">
+      </div>
+      <div class="labelABM">
+        <label for="apellidoForm">Apellido</label>
+        <input name="apellidoForm" id="apellidoForm" type="text">
+      </div>
+      <div class="labelABM">
+        <label for="edadForm">Edad</label>
+        <input name="edadForm" id="edadForm" type="number">
+      </div>
+      <div class="labelABM">
+        <label for="tipoUsuario">Tipo:</label>
+        <select name="tipoUsuario" id="tipoUsuario">
+          <option value="Heroe">Heroe</option>
+          <option value="Villano">Villano</option>
+        </select>
+      </div>
+      <div class="labelABM" id = "grupoAlterego">
+        <label for="alteregoForm" id="lblalteregoForm">AlterEgo:</label>
+        <input name="alteregoForm" id="alteregoForm" type="text">
+      </div>
+      <div class="labelABM" id = "grupoCiudad">
+        <label for="ciudadForm" id="lblciudadForm">Ciudad:</label>
+        <input name="ciudadForm" id="ciudadForm" type="text">
+      </div>
+      <div class="labelABM" id = "grupoPublicado">
+        <label for="publicadoForm" id="lblPublicadoForm">Publicado:</label>
+        <input name="publicadoForm" id="publicadoForm" type="number">
+      </div>
+      <div class="labelABM" id = "grupoEnemigo">
+        <label for="enemigoForm" id="lblEnemigoForm">Enemigo:</label>
+        <input name="enemigoForm" id="enemigoForm" type="text">
+      </div>
+      <div class="labelABM" id = "grupoRobos">
+        <label for="robosForm" id="lblRobosForm">Robos:</label>
+        <input name="robosForm" id="robosForm" type="number">
+      </div>
+      <div class="labelABM" id = "grupoAsesinatos">
+        <label for="asesinatosForm" id="lblAsesinatosForm">Asesinatos:</label>
+        <input name="asesinatosForm" id="asesinatosForm" type="number">
+      </div>
+      <div class="botoneraPie" >
+        <input id="btnAgregarForm" type="button" value="Agregar">
+        <input id="btnModificarForm" type="button" value="Modificar">
+        <input id="btnEliminarForm" type="button" value="Eliminar">
+        <input id="btnCancelarForm" type="button" value="Cancelar">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./clases.js"></script>
+</html>
